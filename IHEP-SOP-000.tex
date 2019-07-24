@@ -1,0 +1,113 @@
+\documentclass[12pt]{cnihepsop}
+% \documentclass[12pt]{unlsilabsop}
+
+\title{Master SOP}
+\date{\today}
+\author{Xin Shi}
+\approved{Xin Shi}
+\sopid{000}
+\sopversion{v1}
+\sophistory{ 
+    \begin{tabular}{|c|c|c|c|} \hline %
+        Revision & Date & Editor & Contents \\
+        \hline 
+        v1 & 2018.03.29 &  Xin Shi  &  Created document \\
+        \hline 
+    \end{tabular}% Date & Editor & Contents \\
+}
+\sopabstract{This master document describes the operations at IHEP for manufacturing and testing modules within the \emph{ATLAS ITk Phase-II} upgrade project. It describes responsibilities, local organization and the documentation structure.}
+
+
+\begin{document}
+
+\maketitle
+
+%-------------------------------------------------------
+\section{Scope}
+
+The ATLAS group at IHEP CAS hosts one of the manufacturing sites for ATLAS ITk strip modules to be used in the upgraded ATLAS Inner tracker detector. Most of the activities will be carried out in the lab B106 (under construction) and experimental hall No. 3. 
+
+
+%-------------------------------------------------------
+\section{Purpose}
+This document and the herein listed subdocuments describe the procedures in place to manufacture modules to high standards and principles to assure their quality.
+
+%-------------------------------------------------------
+\section{Definitions}
+The definitions defined here apply to all subdocuments as well.
+\begin{description}
+    \item[ITk] \emph{Inner Tracker.} Consists of pixel and strip trackers. 
+\end{description}
+
+%-------------------------------------------------------
+\section{Responsibilities}
+\begin{itemize}
+    \item The \textbf{responsible for operations} maintains the SOP documents current, organizes the proper training and makes sure all members of the team follow the SOP. Reports to the IHEP ATLAS team leaders. 
+
+    Currently: Xin Shi \& Yuzhen Yang 
+    \item \textbf{Team members} are responsible to follow the instructions described in the SOP documents for which they are trained. They are not allowed to carry out any procedure without proper and documented training. Pre-production is considered training phase where procedures are allowed to be carried out without documented training. Team members report to the \emph{responsible for operations}.
+
+    The list of current team members is maintained by the \emph{responsible for operations}.
+\end{itemize}
+
+
+%-------------------------------------------------------
+\section{Document hierarchy}
+The documents are organised in a hierarchical way, as outlined by Fig.~\ref{fig:SOPhierarchy}.
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=16cm]{img/SOPhierarchy.pdf}
+        \caption{Hierachy of SOP documents. The three-digit number identifies documents and the first digit assigns it to a class.}
+        \label{fig:SOPhierarchy}
+    \end{center}
+\end{figure}
+Documents are identified by a 3-digit number. The top-level document has the number 000. All the other documents carry numbers different from this. The first digit identifies the group the document belongs to, see Fig.~\ref{fig:SOPhierarchy}.
+
+\subsection{Document managements: versioning, repository}
+Any SOP document carries a revision number, consisting of the letter `v' followed by a number. 
+
+The \LaTeX{} sources including all image files are stored in a git repository~\cite{SOPgit}, which keeps track of changes to the documents.
+
+\subsection{Referencing documents}
+\begin{itemize}
+    \item Cross-reference within SOP documents go as SOP~XXX, where XXX is the document number. This assumes a reference to the latest version of that document. References to specific version are to be avoided.
+    \item Referencing from external documents should use the full title and SOP number.
+\end{itemize}
+
+\subsection{List of documents}
+Table \ref{tbl:SOPlist} shows the planned documents. A list of all current documents is to be maintained and made accessible to all people involved.
+
+\begin{table*}[ht]
+\begin{center}
+\caption{List of SOP documents}
+\label{tbl:SOPlist}
+
+\bigskip
+
+{\footnotesize
+\begin{tabular}{lp{7cm}p{6cm}}
+\toprule
+No. & Title & Comment \\
+\midrule
+000 & Master SOP & This document \\
+%\midrule
+
+\midrule
+101 & Module assembly: Gluing of Hybrid & \\
+
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table*}
+
+
+%-------------------------------------------------------
+\begin{thebibliography}{aaaaaaaa}
+    \bibitem{SOPgit} \url{https://github.com/atlas-itk/cn-ihep-sop}
+
+\end{thebibliography}
+
+
+\end{document}
+

@@ -1,2 +1,1 @@
-# cn-ihep-sop
-CN-IHEP-SOP 
+China IHEP ATLAS ITk SOP 
